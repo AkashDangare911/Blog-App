@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#main-title{
+    padding-bottom: 2rem;
+}
+.main_container{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*-------------------------------CARDS - SECTION--------------------*/
+.card_section{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card{
+    text-decoration: inherit;
+    background-color: #f6f9ff;
+    margin: 10px;
+    width: 350px;
+    height: 100%;
+    min-height: 20rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 2px 14px rgba(44, 67,109,0.4);
+    transition: all 0.3s ease;
+}
+
+.card_image img{
+
+    object-fit:cover ;
+    width: 100%;
+    height: 170px;
+}
+
+.card_panel{
+    padding: 1.6rem 1rem 1rem 1rem;
+}
+
+.card_main_title h2{
+
+    font-size: 1.4rem;
+    color: black;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+.card_para{
+    padding-top: 1rem;
+}
+
+.card_para p {
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #39414a;
+    margin-bottom: 2%;
+}
+
+.card_readmore{
+    margin-top: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 100;
+    background-color: #175aa7;
+    width: fit-content;
+}
+
+.card_readmore span {
+    color: white;
+    text-decoration: none;
+}
+.card:hover{
+
+    transform: scale(1.03);
+    background: rgb(255,255,255);
+    
+    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 82%, rgba(186,244,255,1) 100%, rgba(0,211,255,1) 100% );
+}
+
+/* no posts astana chi div  */
+.last-div{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 8.5rem;
+}
+
+.last-div p {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    background: #8d87e1;
+    display: inline-block;
+    border-radius: 3px;
+    transition: all 0.4s ease ;
+}
+
+.last-div p:hover{
+    background-color: #7970ed;
+    color: white;
+}
+/* ----------------------------  SINGLE BLOG SATHI ----------------------------- */
+
+.single-card_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-bottom: 5rem; */
+    min-height: 50vh;
+}
+
+.single-card{
+    background-color: #dddfe8;
+    padding: 2rem auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 2px 14px rgba(44, 67,109,0.4);
+    transition: all 0.3s ease;
+}
+
+#single-main-title{
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.single-card_image{
+
+    object-fit: cover;
+    /* object-fit:fill; */
+    width: 100%;
+    height: 100%;
+    max-height: 50rem;
+    padding: 0px 2rem;
+    border-radius: 1rem;
+}
+
+.single-description{
+    /* text-transform: capitalize; */
+    padding: 2rem;
+}
+
+.single-description p{
+    font-size: 1rem;
+}
+.single-description p strong{
+    font-size: 1.5rem;
+}
+
+/* -------------------------------- RESPONSIVE SATHI ------------------------------ */
+
+@media only screen and (max-width: 1200px) {
+
+    .card_section{
+        justify-content: space-evenly;
+    }
+}
+

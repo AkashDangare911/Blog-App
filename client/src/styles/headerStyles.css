@@ -1,0 +1,92 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.ul{
+  background: #8d87e1;
+    display: flex;
+    justify-content: space-evenly;
+}
+#app-name{
+    font-weight: 700;
+    font-size:2rem;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.nav-links li{
+  list-style: none;
+  margin: 0 12px;
+}
+.nav-links li a{
+  position: relative;
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.nav-links li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #373737;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before{
+  width: 100%;
+}
+.nav-links li.upward a:before{
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+.nav-links li.upward a:hover:before{
+  bottom: 0px;
+  opacity: 1;
+}
+
+.last-btns{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+  gap:3px;
+}
+
+.welcome-btn, .logout-btn{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px;
+  background: none;
+
+}
+.logout-btn{
+  height: 4rem;
+  color: white;
+  background-color: #175aa7;
+  border: 1px solid #175aa7;
+}
+
+.welcome-btn:hover
+{
+  background: #8d87e1;
+  cursor: unset;
+} 
+.logout-btn:hover{
+  background-color: #175aa7;
+  opacity: 80%;
+  border: 1px solid black;
+}
